@@ -1,0 +1,30 @@
+#pragma once
+NJS_MKEY_A animation_0011C7D0_1_rot[] = {
+	{ 0, 0, 0, 0x2999 },
+	{ 1, 0, 0xFFFFF1C8, 0x2999 },
+	{ 2, 0, 0xFFFFE38F, 0x2999 },
+	{ 3, 0, 0xFFFFD556, 0x2999 },
+	{ 4, 0, 0xFFFFC71D, 0x2999 },
+	{ 5, 0, 0xFFFFB8E4, 0x2999 },
+	{ 6, 0, 0xFFFFBB06, 0x2999 },
+	{ 7, 0, 0xFFFFB9F5, 0x2999 }
+};
+
+NJS_MKEY_A animation_0011C7D0_2_rot[] = {
+	{ 0, 0, 0, 0x2999 },
+	{ 1, 0, 0xE38, 0x2999 },
+	{ 2, 0, 0x1C71, 0x2999 },
+	{ 3, 0, 0x2AAA, 0x2999 },
+	{ 4, 0, 0x38E3, 0x2999 },
+	{ 5, 0, 0x471C, 0x2999 },
+	{ 6, 0, 0x44FA, 0x2999 },
+	{ 7, 0, 0x460B, 0x2999 }
+};
+
+NJS_MDATA2 animation_0011C7D0_mdat[] = {
+	{ NULL, NULL, 0, 0 },
+	{ NULL, animation_0011C7D0_1_rot, 0, LengthOfArray<Uint32>(animation_0011C7D0_1_rot) },
+	{ NULL, animation_0011C7D0_2_rot, 0, LengthOfArray<Uint32>(animation_0011C7D0_2_rot) }
+};
+
+NJS_MOTION animation_0011C7D0 = { animation_0011C7D0_mdat, 8, NJD_MTYPE_POS_0 | NJD_MTYPE_ANG_1, NJD_MTYPE_LINER | 2 };

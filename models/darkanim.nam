@@ -1,0 +1,54 @@
+#pragma once
+NJS_MKEY_A animation_0011EFE8_1_rot[] = {
+	{ 0, 0, 0, 0x2CD1 },
+	{ 1, 0, 0xFA4, 0x2CD1 },
+	{ 2, 0, 0x1F49, 0x2CD1 },
+	{ 3, 0, 0x2EEE, 0x2CD1 },
+	{ 4, 0, 0x3E93, 0x2CD1 },
+	{ 5, 0, 0x4E38, 0x2CD1 },
+	{ 6, 0, 0x4D67, 0x2CD1 },
+	{ 7, 0, 0x4C97, 0x2CD1 }
+};
+
+NJS_MKEY_A animation_0011EFE8_2_rot[] = {
+	{ 0, 0, 0, 0x2CD1 },
+	{ 1, 0, 0xFFFFF05C, 0x2CD1 },
+	{ 2, 0, 0xFFFFE0B7, 0x2CD1 },
+	{ 3, 0, 0xFFFFD112, 0x2CD1 },
+	{ 4, 0, 0xFFFFC16D, 0x2CD1 },
+	{ 5, 0, 0xFFFFB1C8, 0x2CD1 },
+	{ 6, 0, 0xFFFFB264, 0x2CD1 },
+	{ 7, 0, 0xFFFFB301, 0x2CD1 }
+};
+
+NJS_MKEY_A animation_0011EFE8_3_rot[] = {
+	{ 0, 0xFFFFD0BD, 0, 0xFFFFE85F },
+	{ 1, 0xFFFFCCAE, 0, 0xFFFFE85F },
+	{ 2, 0xFFFFC89F, 0, 0xFFFFE85F },
+	{ 3, 0xFFFFC491, 0, 0xFFFFE85F },
+	{ 4, 0xFFFFC082, 0, 0xFFFFE85F },
+	{ 5, 0xFFFFBC73, 0, 0xFFFFE85F },
+	{ 6, 0xFFFFBCCE, 0, 0xFFFFE85F },
+	{ 7, 0xFFFFBD29, 0, 0xFFFFE85F }
+};
+
+NJS_MKEY_A animation_0011EFE8_4_rot[] = {
+	{ 0, 0x2F43, 0, 0xFFFFE85F },
+	{ 1, 0x336A, 0, 0xFFFFE85F },
+	{ 2, 0x3792, 0, 0xFFFFE85F },
+	{ 3, 0x3BBA, 0, 0xFFFFE85F },
+	{ 4, 0x3FE2, 0, 0xFFFFE85F },
+	{ 5, 0x440A, 0, 0xFFFFE85F },
+	{ 6, 0x4383, 0, 0xFFFFE85F },
+	{ 7, 0x42FD, 0, 0xFFFFE85F }
+};
+
+NJS_MDATA2 animation_0011EFE8_mdat[] = {
+	{ NULL, NULL, 0, 0 },
+	{ NULL, animation_0011EFE8_1_rot, 0, LengthOfArray<Uint32>(animation_0011EFE8_1_rot) },
+	{ NULL, animation_0011EFE8_2_rot, 0, LengthOfArray<Uint32>(animation_0011EFE8_2_rot) },
+	{ NULL, animation_0011EFE8_3_rot, 0, LengthOfArray<Uint32>(animation_0011EFE8_3_rot) },
+	{ NULL, animation_0011EFE8_4_rot, 0, LengthOfArray<Uint32>(animation_0011EFE8_4_rot) }
+};
+
+NJS_MOTION animation_0011EFE8 = { animation_0011EFE8_mdat, 8, NJD_MTYPE_POS_0 | NJD_MTYPE_ANG_1, NJD_MTYPE_LINER | 2 };

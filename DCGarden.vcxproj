@@ -115,13 +115,13 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;DCGARDEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Downloads\SA2ModLoader\programming</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Coding\VSRepos\sa2-mod-loader\SA2ModLoader\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -166,6 +166,21 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="models\darkanim.nam" />
+    <None Include="models\darkmodel_1.nja" />
+    <None Include="models\darkmodel_2_button.nja" />
+    <None Include="models\darkmodel_3_vmu.nja" />
+    <None Include="models\heroanim.nam" />
+    <None Include="models\heromodel_1.nja" />
+    <None Include="models\heromodel_2.nja" />
+    <None Include="models\heromodel_3_button.nja" />
+    <None Include="models\heromodel_4_vmu.nja" />
+    <None Include="models\neutmodel_1.nja" />
+    <None Include="models\neutmodel_2_button.nja" />
+    <None Include="models\neutmodel_3.nja" />
+    <None Include="models\neutmodel_4.nja" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
