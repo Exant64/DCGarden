@@ -21,19 +21,28 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NeutGarden.h">
+    <ClInclude Include="AnimationFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeroGarden.h">
+    <ClInclude Include="LandTableInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DarkGarden.h">
+    <ClInclude Include="ModelInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NeutSkybox.h">
+    <ClInclude Include="models\NeutSkybox.nja">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NeutWater.h">
+    <ClInclude Include="models\NeutWater.nja">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextConv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -45,6 +54,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LandTableInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextConv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

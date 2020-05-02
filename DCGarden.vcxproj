@@ -119,9 +119,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;DCGARDEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DCGARDEN_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Coding\VSRepos\sa2-mod-loader\SA2ModLoader\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Coding\VSRepos\sa2-mod-loader\SA2ModLoader\include;F:\Coding\VSRepos\SA2ModLoaderNew\libmodutils</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -149,23 +149,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DarkGarden.h" />
-    <ClInclude Include="HeroGarden.h" />
-    <ClInclude Include="NeutGarden.h" />
-    <ClInclude Include="NeutSkybox.h" />
-    <ClInclude Include="NeutWater.h" />
+    <ClInclude Include="AnimationFile.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="LandTableInfo.h" />
+    <ClInclude Include="ModelInfo.h" />
+    <ClInclude Include="models\NeutSkybox.nja" />
+    <ClInclude Include="models\NeutWater.nja" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextConv.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnimationFile.cpp" />
     <ClCompile Include="DCGarden.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="LandTableInfo.cpp" />
+    <ClCompile Include="ModelInfo.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TextConv.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="models\darkanim.nam" />
